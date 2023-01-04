@@ -1,4 +1,4 @@
-
+/* Padding */
 .p-10 {
   padding: 10px;
 }
@@ -9,6 +9,7 @@
   padding-top: 20px;
 }
  
+/* Margin */
 .m-20 {
   margin: 20px;
 }
@@ -16,6 +17,7 @@
   margin-top: 0;
 }
 
+/* BG Color */
 .bg-eee {
   background-color: #eee;
 }
@@ -23,30 +25,41 @@
   background-color: white;
 }
 
+/* Color */
 .c-black {
   color: black;
 }
 
-.rad-6 {
-  border-radius: 6px;
-}
-
+/* Flex */
 .d-flex {
   display: flex;
 }
 .align-center {
   align-items: center;
 }
+
 .p-relative {
   position: relative;
 }
 
+
+/* Font */
 .text-c {
   text-align: center;
 }
 
-.fs-16 {
-  font-size: 16px;
+.fs-14 {
+  font-size: 14px;
+}
+/* Border */
+.rad-6 {
+  border-radius: 6px;
 }
 
+/* Mobile Style */
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+}
 
