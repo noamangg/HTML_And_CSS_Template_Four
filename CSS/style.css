@@ -1,3 +1,12 @@
+:root {
+  
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
 
 * {
   box-sizing: border-box;
@@ -18,6 +27,19 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color, #0075ff);
+}
+::-webkit-scrollbar-thumb::hover {
+  background-color: var(--blue-alt-color, #0d69d5);
+
 }
 main {
   min-height: 100vh;
@@ -70,7 +92,7 @@ body { background-color: #eee;}
 
 @media (max-width: 767px) {
   .aside {
-    width: 62px;
+    width: 60px;
     padding: 10px;
   }
   .aside > h3 {
@@ -85,3 +107,81 @@ body { background-color: #eee;}
     width: 100%;
   }
 }
+
+
+/* Section Content Start */
+.content {
+  overflow: hidden;
+}
+.content .head .search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.content .head .search input {
+  margin-left: 5px;
+  padding-left: 30px;
+  width: 160px;
+  transition: width 0.3s;
+}
+.content .head .search input:focus {
+  width: 200px;
+}
+.content .head .search input:focus::placeholder {
+  opacity: 0;
+}
+.content .head .icons .notification::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  right: -5px;
+  top: -5px;
+}
+.content .head .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+
+h1 {
+  margin: 20px 20px 40px;
+
+}
+h1::before, h1::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+}
+h1::before {
+  background-color: white;
+  width: 120px;
+}
+h1::after {
+  background-color: black;
+  width: 40px;
+}
+
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* Section Content End */
