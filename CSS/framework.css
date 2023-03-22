@@ -48,11 +48,17 @@
 .h-full {
   height: 100%;
 }
+.h-100 {
+  height: 100px;
+}
 .w-full {
   width: 100%;
 }
 .w-fit {
   width: fit-content;
+}
+.w-100 {
+  width: 100px;
 }
 
 /* @ Padding */
@@ -87,6 +93,9 @@
 .m-0 {
   margin: 0;
 }
+.m-15 {
+  margin: 15px;
+}
 .m-20 {
   margin: 20px;
 }
@@ -96,6 +105,9 @@
 }
 .mt-5 {
   margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
 }
 .mt-15 {
   margin-top: 15px;
@@ -125,8 +137,14 @@
 .mb-10 {
   margin-bottom: 10px;
 }
+.mb-15 {
+  margin-bottom: 15px;
+}
 .mb-20 {
   margin-bottom: 20px;
+}
+.ml-5 {
+  margin-left: 5px;
 }
 .ml-15 {
   margin-left: 15px;
@@ -235,7 +253,7 @@
   border-radius: 6px;
 }
 
-.border-c {
+.b-ccc {
   border: 1px solid #ccc;
 }
 .b-none {
@@ -252,5 +270,9 @@
 }
 
 .click {
+  cursor: pointer;
+}
+
+.c-pointer {
   cursor: pointer;
 }
