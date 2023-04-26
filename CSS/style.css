@@ -83,12 +83,25 @@ aside ul li a.active {
 
 @media (max-width: 767px) {
   aside {
-    width: 62px;
+    width: 62px !important;
+  }
+  aside > h3::first-letter {
+    font-size: 15px;
   }
   aside > h3 {
-    font-size: 13px;
+    font-size: 8px;
     margin-bottom: 20px;
   }
+}
+
+aside {
+  width: fit-content !important;
+  padding-left: .5rem !important;
+  padding-right: .5rem !important;
+}
+aside li a {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
 }
 /* Section Content */
 .content {
@@ -140,6 +153,7 @@ aside ul li a.active {
 
 h1 {
   margin: 20px 20px 40px;
+  padding-bottom: 10px
 }
 h1::before,
 h1::after {
@@ -291,11 +305,14 @@ h1::after {
 .green .icon,
 .green .progress {
   background-color: rgb(34, 197, 94, 0.2);
+  color: #1877f2;
 }
+
 
 /* Section Tickets */
 .tickets .box {
   width: calc(50% - 10px);
+  border: 1px solid var(--color, #eee);
 }
 @media (max-width: 767px) {
   .tickets .box {
